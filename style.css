@@ -96,6 +96,9 @@ small {
 .show-description small {
   opacity: 1;
 }
+.role {
+  float: right;
+}
 .first {
   background-image: url("https://i.imgur.com/v7UQh3k.jpg");
 }
@@ -112,8 +115,9 @@ small {
   background-image: url("https://i.imgur.com/onqGLa4.jpg");
   background-position: left 10%;
 }
-.price {
-  float: right;
+small a {
+  color: rgb(0, 110, 255);
+  font-size: 14px;
 }
 iframe {
   display: block;
