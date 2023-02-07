@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Home | Drifter</title>
 
-    <link href="/normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="/normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js" type="text/javascript" defer></script>
@@ -18,29 +18,40 @@
 
   <body>
     <header-component></header-component>
+
     <main>
-      <div class="first">
-        <p>Welcome to the Drift<br />
-        <small>
-          <br />Drifter is a deckbuilding adventure game set in corporate dystopia.
-          <br />Choose your Drifter and make your stand against The Corporations.
-          <br /><br />Made with <a href="https://www.unity.com">Unity</a>.
-        </small>
+      <article class="first">
+        <p>
+          Welcome to the Drift<br />
+          <small>
+            <br />Drifter is a deckbuilding adventure game set in corporate
+            dystopia.
+            <br />Choose your Drifter and make your stand against The
+            Corporations.
+            <br /><br />Made with <a href="https://www.unity.com">Unity</a>.
+          </small>
         </p>
-      </div>
+      </article>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/fP-61vrmw78" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fP-61vrmw78"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </main>
 
     <footer-component></footer-component>
   </body>
 
   <script>
-    $('div').on('click', function() {
-        $(this).toggleClass('show-description');
+    $("article").on("click", function () {
+      $(this).toggleClass("show-description");
     });
   </script>
-<html>
+  <html></html>
+</html>

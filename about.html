@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>About | Drifter</title>
-    
-    <link href="/normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+
+    <link href="/normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js" type="text/javascript" defer></script>
@@ -19,45 +19,53 @@
   <body>
     <header-component></header-component>
     <main>
-
-      <div class="first">
-        <p>Wesley Coburn<span class="role">Concept and Programming</span><br />
-        <small>
-          <br />Wesley is a chill-ass dude.
-          <br />
-          <br /><a href="https://www.facebook.com/profile.php?id=100070082773235">Facebook</a>
-        </small>
-        </p>
-      </div>
-
-      <div class="second">
-        <p>Joe Rouverol<span class="role">Art and Design</span><br />
-        <small>
-          <br />Joe is a kick-ass dude.
-          <br />
-          <br /><a href="https://www.instagram.com/dragonswordart/">Instagram</a>
-        </small>
-      </p>
-      </div>
-
-      <div class="third">
-        <p>Alden Muller<span class="role">Soundtrack</span><br />
-        <small>
-          <br />Alden is a bad-ass dude.
-          <br />
-          <br /><a href="https://soundcloud.com/little_fields">SoundCloud</a>
-        </small>
-        </p>
-      </div>
-
+      <section>
+        <article class="first">
+          <p>
+            Wesley Coburn<span class="role">Concept and Programming</span><br />
+            <small>
+              <br />Wesley is a chill-ass dude.
+              <br />
+              <br /><a
+                href="https://www.facebook.com/profile.php?id=100070082773235"
+                >Facebook</a
+              >
+            </small>
+          </p>
+        </article>
+        <article class="second">
+          <p>
+            Joe Rouverol<span class="role">Art and Design</span><br />
+            <small>
+              <br />Joe is a kick-ass dude.
+              <br />
+              <br /><a href="https://www.instagram.com/dragonswordart/"
+                >Instagram</a
+              >
+            </small>
+          </p>
+        </article>
+        <article class="third">
+          <p>
+            Alden Muller<span class="role">Soundtrack</span><br />
+            <small>
+              <br />Alden is a bad-ass dude.
+              <br />
+              <br /><a href="https://soundcloud.com/little_fields"
+                >SoundCloud</a
+              >
+            </small>
+          </p>
+        </article>
+      </section>
     </main>
-
     <footer-component></footer-component>
   </body>
-  
+
   <script>
-    $('div').on('click', function() {
-        $(this).toggleClass('show-description');
+    $("article").on("click", function () {
+      $(this).toggleClass("show-description");
     });
   </script>
-<html>
+  <html></html>
+</html>
