@@ -20,21 +20,6 @@
     <header-component></header-component>
     <main>
       <section>
-        <article class="first">
-          <p>
-            Faydra, Rogue Cyborg<br />
-            <br />
-            <small>
-              Faydra's parents were corporate elites, and she grew up in the
-              clutches of The Corporations. She was 12 when she disabled the
-              tracker embedded in her skull, and made her escape into the real
-              world. It's not a pretty sight, but at least it's real. Only
-              problem is, everyone wants the corporate hardware inside her head.
-              Good thing it makes her so damn hard to kill.
-            </small>
-          </p>
-        </article>
-
         <!--
         <article>
           <img src="https://i.imgur.com/v7UQh3k.jpg" width="200" height="150" />
@@ -57,6 +42,27 @@
         </figure>
       --></section>
 
+      <article class="first">
+        <p>
+          Faydra, Rogue Cyborg<br />
+          <br />
+          <small>
+            Faydra's parents were corporate elites, and she grew up in the
+            clutches of The Corporations. She was 12 when she disabled the
+            tracker embedded in her skull, and made her escape into the real
+            world. It's not a pretty sight, but at least it's real. Only problem
+            is, everyone wants the corporate hardware inside her head. Good
+            thing it makes her so damn hard to kill.
+          </small>
+        </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="./audio/Faydra.wav" type="audio/wav" />
+          </audio>
+        </div>
+      </article>
+
       <article class="second">
         <p>
           Genzer, Evolved Mutant<br />
@@ -69,6 +75,12 @@
             strange new abilities that he would turn against The Corporations.
           </small>
         </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="./audio/Genzer.wav" type="audio/wav" />
+          </audio>
+        </div>
       </article>
       <article class="third">
         <p>
@@ -82,7 +94,14 @@
             something to fear.
           </small>
         </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="./audio/Kili.wav" type="audio/wav" />
+          </audio>
+        </div>
       </article>
+
       <article class="fourth">
         <p>
           Madrik, Obsessed Mage<br />
@@ -96,7 +115,14 @@
             aethercraft.
           </small>
         </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="./audio/Madrik.wav" type="audio/wav" />
+          </audio>
+        </div>
       </article>
+
       <article class="fifth">
         <p>
           Yergov, Biochemist<br />
@@ -109,6 +135,12 @@
             chemicals and elixirs, and has mastered many unnatural sciences.
           </small>
         </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="./audio/Yergov.wav" type="audio/wav" />
+          </audio>
+        </div>
       </article>
     </main>
     <footer-component></footer-component>
@@ -119,5 +151,4 @@
       $(this).toggleClass("show-description");
     });
   </script>
-  <html></html>
 </html>

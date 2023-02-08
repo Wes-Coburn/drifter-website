@@ -73,10 +73,6 @@ a {
   color: white;
   font-size: 20px;
 }
-.small {
-  color: rgb(0, 110, 255);
-  font-size: 14px;
-}
 img {
   margin: 40px 0px 0px 0px;
   border: 7px solid black;
@@ -86,30 +82,39 @@ ul {
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
 }
-.thin {
-  padding: 6px;
-}
 li {
   display: inline;
   padding: 0 10px 0 10px;
 }
+/*
 figure, figure img, figcaption {
   display: inline;
   margin: 10px;
 }
+*/
 small {
   opacity: 0;
   font-size: 12px;
   /*line-height: 12px;*/
 }
-.show-description p {
-  height: 150px;
+small a {
+  color: rgb(0, 110, 255);
+  font-size: 14px;
 }
-.show-description small {
-  opacity: 1;
+iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+.small {
+  color: rgb(0, 110, 255);
+  font-size: 14px;
 }
 .role {
   float: right;
+}
+.thin {
+  padding: 6px;
 }
 .first {
   background-image: url("https://i.imgur.com/v7UQh3k.jpg");
@@ -127,14 +132,36 @@ small {
   background-image: url("https://i.imgur.com/onqGLa4.jpg");
   background-position: left 10%;
 }
-small a {
-  color: rgb(0, 110, 255);
-  font-size: 14px;
+.audio-container {
+  display: flex;
+  justify-content: right;
+  /*align-items: center;*/
+  opacity: 0;
 }
-iframe {
-  display: block;
-  margin: 20px auto;
+.gif-container {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
+.gif-container img {
+  margin: 0;
+  border-radius: 50px;
+}
+
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+.show-description .audio-container {
+  opacity: 1;
+}
+.show-description .gif-container {
+  opacity: 1;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 50px;
