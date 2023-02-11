@@ -19,6 +19,15 @@
   <body>
     <header-component></header-component>
     <main>
+      <nav>
+        <ul>
+          <li><a href="#faydra">Faydra</a></li>
+          <li><a href="#genzer">Genzer</a></li>
+          <li><a href="#kili">Kili</a></li>
+          <li><a href="#madrik">Madrik</a></li>
+          <li><a href="#yergov">Yergov</a></li>
+        </ul>
+      </nav>
       <section>
         <!--
         <article>
@@ -42,7 +51,7 @@
         </figure>
       --></section>
 
-      <article class="first">
+      <article class="first" id="faydra">
         <p>
           Faydra, Rogue Cyborg<br />
           <br />
@@ -63,7 +72,7 @@
         </div>
       </article>
 
-      <article class="second">
+      <article class="second" id="genzer">
         <p>
           Genzer, Evolved Mutant<br />
           <br />
@@ -82,7 +91,7 @@
           </audio>
         </div>
       </article>
-      <article class="third">
+      <article class="third" id="kili">
         <p>
           Kili, Neon Rider<br />
           <br />
@@ -102,7 +111,7 @@
         </div>
       </article>
 
-      <article class="fourth">
+      <article class="fourth" id="madrik">
         <p>
           Madrik, Obsessed Mage<br />
           <br />
@@ -123,7 +132,7 @@
         </div>
       </article>
 
-      <article class="fifth">
+      <article class="fifth" id="yergov">
         <p>
           Yergov, Biochemist<br />
           <br />
@@ -145,7 +154,7 @@
     </main>
     <footer-component></footer-component>
   </body>
-
+  
   <script>
     $("article").on("click", function () {
       $(this).toggleClass("show-description");

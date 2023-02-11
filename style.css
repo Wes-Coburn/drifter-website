@@ -20,6 +20,9 @@ header {
   border: solid black;
   border-width: 10px;
   border-radius: 20px;
+  /*text-align: center;*/
+}
+nav {
   text-align: center;
 }
 article {
@@ -76,6 +79,10 @@ a {
   color: white;
   font-size: 20px;
 }
+a.small, small a {
+  color: rgb(0, 110, 255);
+  font-size: 14px;
+}
 img {
   margin: 40px 0px 0px 0px;
   border: 7px solid black;
@@ -100,18 +107,9 @@ small {
   font-size: 12px;
   /*line-height: 12px;*/
 }
-small a {
-  color: rgb(0, 110, 255);
-  font-size: 14px;
-}
 iframe {
   display: block;
   margin: 20px auto;
-}
-
-.small {
-  color: rgb(0, 110, 255);
-  font-size: 14px;
 }
 .role {
   float: right;
@@ -156,13 +154,7 @@ iframe {
 .show-description p {
   height: 150px;
 }
-.show-description small {
-  opacity: 1;
-}
-.show-description .audio-container {
-  opacity: 1;
-}
-.show-description .gif-container {
+.show-description * {
   opacity: 1;
 }
 
@@ -190,7 +182,7 @@ iframe {
   a {
     font-size: 16px;
   }
-  .small {
+  a.small {
     font-size: 12px;
   }
   iframe {
