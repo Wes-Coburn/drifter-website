@@ -14,7 +14,6 @@ headerTemplate.innerHTML = `
     </ul>
     <ul class = "thin">
       <li><a class ="small" href="https://discord.gg/X49ju9VAEY" target="_blank">Discord</a></li>
-      <li><a class ="small" href="https://www.facebook.com/drifterthegame" target="_blank">Facebook</a></li>
       <li><a class ="small" href="https://www.instagram.com/drifterthegame/?r=nametag" target="_blank">Instagram</a></li>
       <li><a class ="small" href="https://www.youtube.com/channel/UCb6l5aLCVajsJp8rTTyS_OA" target="_blank">YouTube</a></li>
     </ul>
