@@ -79,6 +79,15 @@ a {
   color: white;
   font-size: 20px;
 }
+a:hover, a.small:hover {
+  color: darkorange;
+}
+/*
+[href] {
+}
+a[href*="instagram"] {
+}
+*/
 a.small, small a {
   color: rgb(0, 110, 255);
   font-size: 14px;
@@ -117,6 +126,18 @@ iframe {
 .thin {
   padding: 6px;
 }
+/*
+#faydra {
+}  
+#genzer {
+}
+#kili {
+}
+#madrik {
+}  
+#yergov {
+}
+*/
 .first {
   background-image: url("https://i.imgur.com/v7UQh3k.jpg");
 }
