@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Rowdies:wght@300&display=swap");
+
+/* Reset User Agent Defaults
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+/* Header */
+header {
+  border-bottom: 5px solid black;
+  background: url("https://i.imgur.com/YwqUa7z.jpg");
+  background-size: cover;
+  background-position: 0% 20%;
+  color: white;
+  
+  position: sticky;
+  top: -185px;
+  z-index: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: white;
+}
+
+/* Navigation */
+nav {
+  height: 40px;
+  text-align: center;
+}
+nav a {
+  padding: 5px;
+  border-radius: 15%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Content */
+body {
+  background: url("https://i.imgur.com/v7UQh3k.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rowdies", cursive;
+}
+article {
+  width: 70%;  
+  height: 200px;
+  margin: 40px 0;
+  border-radius: 12px;
+  background-size: cover;
+  position: relative;
+  left: 15%;
+}
+
+/* Text */
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+}
+h2 {
+  margin: 0px 0 70px 0;
+  text-align: center;
+  color: #bbbbbb;
+}
+small {
+  font-size: small;
+  opacity: 0;
+  /*line-height: 12px;*/
+}
+article:hover p {
+  font-size: larger;
+}
+article p {
+  width: 96.7%;
+  padding: 10px;
+  bottom: 0;
+  margin: 0;
+  /*height: 30px;*/
+  height: 20%;
+
+  background: black;
+  background: linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4));
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4)
+  );
+  background: -moz-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4)
+  );
+  
+  line-height: 15px;
+  text-align: left;
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+}
+
+/* Links */
+a {
+  font-size: small;
+  color: rgb(0, 110, 255);
+}
+header nav a {
+  font-size: larger;
+  color: white;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+}
+a:hover, a.small:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+/*
+[href] {
+}
+a[href*="instagram"] {
+}
+*/
+
+/* Lists */
+ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+li {
+  padding: 0;
+  display: inline;
+  line-height: 40px; /* Set equal to HEIGHT to center elements */
+}
+/*
+p li {
+  margin: 0 5px;
+}
+figure, figure img, figcaption {
+  display: inline;
+  margin: 10px;
+}
+*/
+
+/* Media */
+article img {
+  width: 150px;
+  height: 150px;
+  margin: 40px 0px 0px 0px;
+  border: 7px solid black;
+  border-radius: 20px;
+  z-index: 1;
+}
+iframe {
+  margin: 20px auto;
+  display: block;
+}
+
+/* ID's */
+/*
+#faydra {
+}  
+#genzer {
+}
+#kili {
+}
+#madrik {
+}  
+#yergov {
+}
+*/
+
+/* Input */
+input[type="button"] {
+  padding: 10px 15px;
+  z-index: 0;
+}
+
+/* Classes */
+.first {
+  background-image: url("https://i.imgur.com/v7UQh3k.jpg");
+}
+.second {
+  background-image: url("https://i.imgur.com/7wDsw9V.png");
+}
+.third {
+  background-image: url("https://i.imgur.com/KBnHxI0.jpg");
+}
+.fourth {
+  background-image: url("https://i.imgur.com/YwqUa7z.jpg");
+}
+.fifth {
+  background-image: url("https://i.imgur.com/onqGLa4.jpg");
+  background-position: left 10%;
+}
+.role {
+  float: right;
+}
+.thin {
+  padding: 6px;
+}
+
+/* Classes.Container */
+.audio-container {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+.gif-container {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.gif-container img {
+  margin: 0;
+  border-radius: 50px;
+  border-width: 3px;
+}
+
+/* Classes.Toggle */
+/*
+article.show-description {
+  overflow: scroll;
+}
+*/
+.show-description p {
+  /*height: 150px;*/
+  height: 80%;
+}
+.show-description * {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  /* Content */
+  header {
+    top: -115px;
+  }
+  
+  /* Text */
+  h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px;
+  }
+  small {
+    font-size: smaller;
+  }
+  article p, article:hover p {
+    font-size: small;
+  }
+
+  /* Links */
+  a {
+    font-size: medium;
+  }
+  a.small {
+    font-size: small;
+  }
+
+  /* Media */
+  iframe {
+    max-width: 350px;
+  }
+}

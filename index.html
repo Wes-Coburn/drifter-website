@@ -7,17 +7,38 @@
 
     <title>Home | Drifter</title>
 
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="./resources/css/index.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="index.js" type="text/javascript" defer></script>
+    <script src="resources/javascript/index.js" type="text/javascript" defer></script>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
   </head>
 
   <body>
     <header-component></header-component>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://discord.gg/X49ju9VAEY" target="_blank">Discord</a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/drifterthegame/?r=nametag"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCb6l5aLCVajsJp8rTTyS_OA"
+            target="_blank"
+            >YouTube</a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <article class="first">
@@ -39,11 +60,9 @@
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; 
-      encrypted-media; gyroscope; picture-in-picture; web-share;"
-        allowfullscreen
+      encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
       ></iframe>
     </main>
-
     <footer-component></footer-component>
   </body>
 

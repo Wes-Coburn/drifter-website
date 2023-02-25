@@ -1,23 +1,13 @@
 const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = `
-<style>
-  footer {
-    text-align: center;
-    color: white;
-  }
-  a {
-    color: white;
-  }
-</style>
+<link href="./resources/css/index.css" rel="stylesheet" />
 
 <footer>
-  <small>
-  <br><br>  
-  Secret Passage Games
-    <br>
+  <address>
+    <br><br>Secret Passage Games<br>
     <a href = "mailto: secretpassagegames@outlook.com">Contact Us</a>
-    <br><br>
-  </small>
+  </address>
+  <br><br>
 </footer>
 `;
 

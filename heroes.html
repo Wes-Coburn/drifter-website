@@ -7,11 +7,10 @@
 
     <title>Heroes | Drifter</title>
 
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="./resources/css/index.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="index.js" type="text/javascript" defer></script>
+    <script src="resources/javascript/index.js" type="text/javascript" defer></script>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
   </head>
@@ -66,9 +65,11 @@
         </p>
 
         <div class="audio-container">
-          <audio controls>
-            <source src="./audio/Faydra.wav" type="audio/wav" />
-          </audio>
+          <input
+            type="button"
+            value="LISTEN: Faydra"
+            onclick="playAudio('resources/audio/Faydra.wav')"
+          />
         </div>
       </article>
 
@@ -86,9 +87,11 @@
         </p>
 
         <div class="audio-container">
-          <audio controls>
-            <source src="./audio/Genzer.wav" type="audio/wav" />
-          </audio>
+          <input
+            type="button"
+            value="LISTEN: Genzer"
+            onclick="playAudio('resources/audio/Genzer.wav')"
+          />
         </div>
       </article>
       <article class="third" id="kili">
@@ -105,9 +108,11 @@
         </p>
 
         <div class="audio-container">
-          <audio controls>
-            <source src="./audio/Kili.wav" type="audio/wav" />
-          </audio>
+          <input
+            type="button"
+            value="LISTEN: Kili"
+            onclick="playAudio('resources/audio/Kili.wav')"
+          />
         </div>
       </article>
 
@@ -126,9 +131,11 @@
         </p>
 
         <div class="audio-container">
-          <audio controls>
-            <source src="./audio/Madrik.wav" type="audio/wav" />
-          </audio>
+          <input
+            type="button"
+            value="LISTEN: Madrik"
+            onclick="playAudio('resources/audio/Madrik.wav')"
+          />
         </div>
       </article>
 
@@ -146,15 +153,17 @@
         </p>
 
         <div class="audio-container">
-          <audio controls>
-            <source src="./audio/Yergov.wav" type="audio/wav" />
-          </audio>
+          <input
+            type="button"
+            value="LISTEN: Yergov"
+            onclick="playAudio('resources/audio/Yergov.wav')"
+          />
         </div>
       </article>
     </main>
     <footer-component></footer-component>
   </body>
-  
+
   <script>
     $("article").on("click", function () {
       $(this).toggleClass("show-description");
