@@ -10,13 +10,35 @@
     <link href="./resources/css/index.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="resources/javascript/index.js" type="text/javascript" defer></script>
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script
+      src="./resources/javascript/index.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="./components/header.js" type="text/javascript" defer></script>
+    <script src="./components/footer.js" type="text/javascript" defer></script>
   </head>
 
   <body>
-    <header-component></header-component>
+    <!-- Custom header instead of <header-component> to correct relative filepaths -->
+    <header>
+      <h1>Drifter</h1>
+      <h2>Deckbuilding In Corporate Dystopia</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./html/heroes.html">Heroes</a></li>
+          <li><a href="./html/about.html">About Us</a></li>
+          <li>
+            <a
+              href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F"
+              target="_blank"
+              >Play Now!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <nav>
       <ul>
@@ -63,7 +85,15 @@
       encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
       ></iframe>
     </main>
-    <footer-component></footer-component>
+
+    <!-- Custom footer instead of <footer-component> to correct relative filepaths -->
+    <footer>
+      <address>
+        <br /><br />Secret Passage Games<br />CA, USA<br />
+        <a href="mailto: secretpassagegames@outlook.com">Contact Us</a>
+      </address>
+      <br /><br />
+    </footer>
   </body>
 
   <script>

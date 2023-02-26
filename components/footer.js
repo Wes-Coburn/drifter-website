@@ -1,10 +1,10 @@
 const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = `
-<link href="./resources/css/index.css" rel="stylesheet" />
+<link href="../resources/css/index.css" rel="stylesheet" />
 
 <footer>
   <address>
-    <br><br>Secret Passage Games<br>
+    <br><br>Secret Passage Games<br>CA, USA<br />
     <a href = "mailto: secretpassagegames@outlook.com">Contact Us</a>
   </address>
   <br><br>

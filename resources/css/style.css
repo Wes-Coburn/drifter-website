@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Rowdies:wght@300&display=swap");
 
-/* Reset User Agent Defaults
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*/
-
 /* Header */
 header {
   border-bottom: 5px solid black;
@@ -17,7 +9,7 @@ header {
   color: white;
   
   position: sticky;
-  top: -185px;
+  top: -205px;
   z-index: 1;
 }
 
@@ -25,6 +17,7 @@ header {
 footer {
   text-align: center;
   color: white;
+  
 }
 
 /* Navigation */
@@ -34,7 +27,7 @@ nav {
 }
 nav a {
   padding: 5px;
-  border-radius: 15%;
+  border-radius: 12px;
   background-color:rgba(0, 0, 0, 0.5);
 }
 nav a:hover {
@@ -52,13 +45,13 @@ body {
   font-family: "Rowdies", cursive;
 }
 article {
-  width: 70%;  
+  width: 85%;
   height: 200px;
   margin: 40px 0;
   border-radius: 12px;
   background-size: cover;
   position: relative;
-  left: 15%;
+  left: 7.5%; /* Set equal to 1/2 WIDTH to center elements */
 }
 
 /* Text */
@@ -69,25 +62,22 @@ h1 {
   color: #aaaaaa;
 }
 h2 {
-  margin: 0px 0 70px 0;
+  margin-bottom: 70px;
   text-align: center;
   color: #bbbbbb;
 }
 small {
   font-size: small;
   opacity: 0;
-  /*line-height: 12px;*/
 }
-article:hover p {
-  font-size: larger;
-}
-article p {
-  width: 96.7%;
+article p {  
+  box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+  
   padding: 10px;
   bottom: 0;
   margin: 0;
-  /*height: 30px;*/
-  height: 20%;
 
   background: black;
   background: linear-gradient(
@@ -114,6 +104,12 @@ article p {
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
 }
+article:hover p {
+  font-style: italic;
+}
+article:hover small {
+  font-style: normal;
+}
 
 /* Links */
 a {
@@ -123,6 +119,9 @@ a {
 header nav a {
   font-size: larger;
   color: white;
+}
+footer a {
+  font-size: large;
 }
 a:link {
   text-decoration: none;
@@ -140,13 +139,6 @@ a:active {
   text-decoration: none;
 }
 
-/*
-[href] {
-}
-a[href*="instagram"] {
-}
-*/
-
 /* Lists */
 ul {
   height: 100%;
@@ -157,27 +149,16 @@ ul {
 li {
   padding: 0;
   display: inline;
-  line-height: 40px; /* Set equal to HEIGHT to center elements */
+  line-height: 40px; /* Set equal to <nav> HEIGHT to center elements */
 }
-/*
-p li {
-  margin: 0 5px;
+header nav {
+  height: 50px;
 }
-figure, figure img, figcaption {
-  display: inline;
-  margin: 10px;
+header li {
+  line-height: 50px; /* Set equal to <nav> HEIGHT to center elements */
 }
-*/
 
 /* Media */
-article img {
-  width: 150px;
-  height: 150px;
-  margin: 40px 0px 0px 0px;
-  border: 7px solid black;
-  border-radius: 20px;
-  z-index: 1;
-}
 iframe {
   margin: 20px auto;
   display: block;
@@ -201,6 +182,14 @@ iframe {
 input[type="button"] {
   padding: 10px 15px;
   z-index: 0;
+  border-radius: 12px;
+
+  color: white;
+  background-color: black;
+}
+input[type="button"]:hover {
+  color: black;
+  background-color: white;
 }
 
 /* Classes */
@@ -243,19 +232,16 @@ input[type="button"] {
   transition: opacity 0.5s;
 }
 .gif-container img {
-  margin: 0;
-  border-radius: 50px;
-  border-width: 3px;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 /* Classes.Toggle */
-/*
-article.show-description {
-  overflow: scroll;
-}
-*/
 .show-description p {
-  /*height: 150px;*/
   height: 80%;
 }
 .show-description * {
@@ -267,7 +253,7 @@ article.show-description {
 @media (max-width: 500px) {
   /* Content */
   header {
-    top: -115px;
+    top: -120px;
   }
   
   /* Text */
