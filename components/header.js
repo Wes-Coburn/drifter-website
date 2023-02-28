@@ -5,7 +5,9 @@ headerTemplate.innerHTML = `
 <header>
   <h1>Drifter</h1>
   <h2>Deckbuilding In Corporate Dystopia</h2>
-  <nav>
+</header>
+
+<nav class="main-nav">
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../html/heroes.html">Heroes</a></li>
@@ -13,7 +15,6 @@ headerTemplate.innerHTML = `
       <li><a href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F" target="_blank">Play Now!</a></li>
     </ul>
   </nav>
-</header>
 `;
 
 class Header extends HTMLElement {

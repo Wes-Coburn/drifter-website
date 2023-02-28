@@ -47,11 +47,9 @@
         </p>
 
         <div class="audio-container">
-          <input
-            type="button"
-            value="LISTEN: Faydra"
-            onclick="playAudio('../resources/audio/Faydra.wav')"
-          />
+          <button onclick="playAudio('../resources/audio/Faydra.wav')">
+            LISTEN: Faydra
+          </button>
         </div>
       </article>
 
@@ -69,11 +67,9 @@
         </p>
 
         <div class="audio-container">
-          <input
-            type="button"
-            value="LISTEN: Genzer"
-            onclick="playAudio('../resources/audio/Genzer.wav')"
-          />
+          <button onclick="playAudio('../resources/audio/Genzer.wav')">
+            LISTEN: Genzer
+          </button>
         </div>
       </article>
       <article class="third" id="kili">
@@ -90,11 +86,9 @@
         </p>
 
         <div class="audio-container">
-          <input
-            type="button"
-            value="LISTEN: Kili"
-            onclick="playAudio('../resources/audio/Kili.wav')"
-          />
+          <button onclick="playAudio('../resources/audio/Kili.wav')">
+            LISTEN: Kili
+          </button>
         </div>
       </article>
 
@@ -113,11 +107,9 @@
         </p>
 
         <div class="audio-container">
-          <input
-            type="button"
-            value="LISTEN: Madrik"
-            onclick="playAudio('../resources/audio/Madrik.wav')"
-          />
+          <button onclick="playAudio('../resources/audio/Madrik.wav')">
+            LISTEN: Madrik
+          </button>
         </div>
       </article>
 
@@ -135,11 +127,9 @@
         </p>
 
         <div class="audio-container">
-          <input
-            type="button"
-            value="LISTEN: Yergov"
-            onclick="playAudio('../resources/audio/Yergov.wav')"
-          />
+          <button onclick="playAudio('../resources/audio/Yergov.wav')">
+            LISTEN: Yergov
+          </button>
         </div>
       </article>
     </main>
@@ -147,8 +137,16 @@
   </body>
 
   <script>
-    $("article").on("click", function () {
-      $(this).toggleClass("show-description");
+    // Add a click event listener to the article element
+    $("article").on("click", function (event) {
+      // Check if the click event was triggered by the button element
+      if (event.target.nodeName === "BUTTON") {
+        // Stop the event propagation
+        event.stopPropagation();
+      } else {
+        // Toggle the visibility of the article element
+        $(this).toggleClass("show-description");
+      }
     });
   </script>
 </html>
