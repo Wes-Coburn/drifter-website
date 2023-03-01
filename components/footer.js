@@ -4,10 +4,10 @@ footerTemplate.innerHTML = `
 
 <footer>
   <address>
-    <br><br>Secret Passage Games<br>CA, USA<br />
-    <a href = "mailto: secretpassagegames@outlook.com">Contact Us</a>
+    <br><br>Secret Passage Games<br>CA, USA<br>
+    <a href = "mailto:secretpassagegames@outlook.com">Contact Us</a>
   </address>
-  <br><br>
+  <br>
 </footer>
 `;
 

@@ -1,12 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Rowdies:wght@300&display=swap");
 
+html {
+  font-family: "Rowdies", cursive;
+}
+
+/* Body */
+body {
+  background: url("https://i.imgur.com/v7UQh3k.jpg");
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Header */
 header {
-  border-bottom: .3125rem solid black; /*5px solid black;*/
+  border-bottom: 0.3125rem solid black; /*5px solid black;*/
   background: url("https://i.imgur.com/YwqUa7z.jpg");
   background-size: cover;
   background-position: 0% 20%;
   color: white;
+}
+header > h1 {
+  margin: 0;
+  padding-top: 0.3125rem; /*5px;*/
+  text-align: center;
+  font-size: 4.6875rem; /*75px;*/
+  color: #aaaaaa;
+}
+header > h2 {
+  margin-bottom: 1.25rem; /*20px;*/
+  text-align: center;
+  color: #bbbbbb;
 }
 
 /* Footer */
@@ -14,90 +40,90 @@ footer {
   text-align: center;
   color: white;
 }
-address {
+footer > address {
   font-style: normal;
 }
+footer a {
+  font-size: large;
+}
 
-/* Navigation */
+/*
+* Navigation
+* > Nav
+* > #main-nav
+*/
 nav {
   height: 2.5rem; /*40px;*/
+  position: sticky;
+  top: 3.125rem;
+  z-index: 9;
   text-align: center;
 }
-/* Main Nav */
-nav.main-nav {
+nav a {
+  padding: 0.3125rem; /*5px;*/
+  border-radius: 0.75rem; /*12px;*/
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav a:hover,
+#main-nav a:hover {
+  background-color: white;
+  color: black;
+}
+nav ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+nav li {
+  padding: 0;
+  display: inline;
+  line-height: 2.5rem; /*40px;*/ /* Set equal to <nav> HEIGHT to center elements */
+}
+
+#main-nav {
   height: 3.125rem; /*50px;*/
-  position: sticky;
   top: 0;
-  z-index: 1;
   /*transition: opacity .3s ease-in-out;*/
 }
+#main-nav a {
+  font-size: larger;
+  color: white;
+}
+#main-nav li {
+  line-height: 3.125rem; /*50px;*/ /* Set equal to <nav id="main-nav"> HEIGHT to center elements */
+}
 /*
-nav.main-nav.sticky {
+#main-nav.sticky {
   opacity: .5;
 }
 */
 
-/* Nav Links */
-nav a {
-  padding: .3125rem; /*5px;*/
-  border-radius: .75rem; /*12px;*/
-  background-color:rgba(0, 0, 0, 0.5);
-}
-nav.main-nav a:hover, nav a:hover {
-  background-color: white;
-  color: black;
-}
-
-/* Content */
-body {
-  background: url("https://i.imgur.com/v7UQh3k.jpg");
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Rowdies", cursive;
-}
-article {
+/* Slider */
+.slider {
   width: 85%;
   height: 12.5rem; /*200px;*/
   margin: 2.5rem 0; /*40px 0;*/
-  border-radius: .75rem; /*12px;*/
+  border-radius: 0.75rem; /*12px;*/
   background-size: cover;
   position: relative;
   left: 7.5%; /* Set equal to 1/2 WIDTH to center elements */
 }
-
-/* Text */
-h1 {
-  margin: 0;
-  padding-top: .3125rem; /*5px;*/
-  text-align: center;
-  font-size: 4.6875rem; /*75px;*/
-  color: #aaaaaa;
-}
-h2 {
-  margin-bottom: 1.25rem; /*20px;*/
-  text-align: center;
-  color: #bbbbbb;
-}
-small {
+.slider small {
   font-size: small;
   opacity: 0;
 }
-article p {  
+.slider p {
   box-sizing: border-box;
   width: 100%;
   height: 20%;
-  
-  padding: .625rem; /*10px;*/
+
+  padding: 0.625rem; /*10px;*/
   bottom: 0;
   margin: 0;
 
   background: black;
-  background: linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.4));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
   background: -webkit-linear-gradient(
     bottom,
     rgba(0, 0, 0, 1),
@@ -108,8 +134,8 @@ article p {
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0.4)
   );
-  
-  line-height: .9375rem; /*15px;*/
+
+  line-height: 0.9375rem; /*15px;*/
   text-align: left;
   position: absolute;
   color: rgba(255, 255, 255, 1);
@@ -119,69 +145,39 @@ article p {
   -moz-transition: height 0.5s;
 }
 
-/* Do something better looking
-article:hover p {
-  font-style: italic;
+.slider.show-description p {
+  height: 80%;
 }
-article:hover small {
-  font-style: normal;
+.slider.show-description * {
+  opacity: 1;
+  pointer-events: auto;
 }
-*/
 
-/* Links */
+/* Links (non-nav) */
 a {
-  font-size: small;
   color: rgb(0, 110, 255);
 }
-nav.main-nav a {
-  font-size: larger;
-  color: white;
-}
-footer a {
-  font-size: large;
-}
-a:link {
-  text-decoration: none;
-}
-a:visited {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
 }
 a:hover {
   color: orange;
-}
-a:hover, a.small:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-
-/* Lists */
-ul {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-li {
-  padding: 0;
-  display: inline;
-  line-height: 2.5rem; /*40px;*/ /* Set equal to <nav> HEIGHT to center elements */
-}
-nav.main-nav li {
-  line-height: 3.125rem; /*50px;*/ /* Set equal to <nav class="main-nav"> HEIGHT to center elements */
 }
 
 /* Media */
 iframe {
   margin: 1.25rem auto; /*20px auto;*/
   display: block;
+  border: 0;
 }
 .gif-container img {
   width: 9.375rem; /*150px;*/
   height: 9.375rem; /*150px;*/
   margin-top: 1.25rem; /*20px;*/
-  border: .3125rem solid black; /*5px solid black;*/
+  border: 0.3125rem solid black; /*5px solid black;*/
   border-radius: 1.25rem; /*20px;*/
   z-index: 1;
 }
@@ -200,25 +196,28 @@ iframe {
 }
 */
 
-/* Input */
-button, input[type="button"] {
-  padding: .625rem .9375rem; /*10px 15px;*/
+/* Buttons */
+button,
+input[type="button"] {
+  padding: 0.625rem 0.9375rem; /*10px 15px;*/
   z-index: 0;
-  border-radius: .75rem; /*12px;*/
+  border-radius: 0.75rem; /*12px;*/
 
   color: white;
   background-color: black;
 }
-button:hover, input[type="button"]:hover {
+button:hover,
+input[type="button"]:hover {
   color: black;
   background-color: white;
 }
-button:active, input[type="button"]:active {
+button:active,
+input[type="button"]:active {
   color: white;
   background-color: black;
 }
 
-/* Classes */
+/* Backgrounds */
 .first {
   background-image: url("https://i.imgur.com/v7UQh3k.jpg");
 }
@@ -235,14 +234,8 @@ button:active, input[type="button"]:active {
   background-image: url("https://i.imgur.com/onqGLa4.jpg");
   background-position: left 10%;
 }
-.role {
-  float: right;
-}
-.thin {
-  padding: .375rem; /*6px;*/
-}
 
-/* Classes.Container */
+/* Containers */
 .audio-container {
   display: flex;
   justify-content: center;
@@ -258,13 +251,12 @@ button:active, input[type="button"]:active {
   transition: opacity 0.5s;
 }
 
-/* Classes.Toggle */
-.show-description p {
-  height: 80%;
+/* Modifiers */
+.role {
+  float: right;
 }
-.show-description * {
-  opacity: 1;
-  pointer-events: auto;
+.thin {
+  padding: 0.375rem; /*6px;*/
 }
 
 /* Media Queries */
@@ -275,11 +267,6 @@ button:active, input[type="button"]:active {
     justify-content: right;
     padding-top: 4.6875rem; /*75px;*/
   }
-  /*
-  .role {
-    
-  }
-  */
 
   /* Text */
   h1 {
@@ -292,9 +279,6 @@ button:active, input[type="button"]:active {
   }
   small {
     font-size: smaller;
-  }
-  article p, article:hover p {
-    font-size: small;
   }
 
   /* Links */
@@ -313,6 +297,6 @@ button:active, input[type="button"]:active {
     width: 4.6875rem; /*75px;*/
     height: 4.6875rem; /*75px;*/
     margin-top: 1.25rem; /*20px;*/
-    border-width: .0625rem; /*1px;*/
+    border-width: 0.0625rem; /*1px;*/
   }
 }

@@ -7,7 +7,7 @@ headerTemplate.innerHTML = `
   <h2>Deckbuilding In Corporate Dystopia</h2>
 </header>
 
-<nav class="main-nav">
+<nav id="main-nav">
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../html/heroes.html">Heroes</a></li>
