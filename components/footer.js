@@ -1,6 +1,6 @@
 const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = `
-<link href="../resources/css/index.css" rel="stylesheet" />
+<link rel="stylesheet" href="../resources/css/index.css" />
 
 <footer>
   <address>

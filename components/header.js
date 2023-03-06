@@ -1,6 +1,6 @@
 const headerTemplate = document.createElement("template");
 headerTemplate.innerHTML = `
-<link href="../resources/css/index.css" rel="stylesheet" />
+<link rel="stylesheet" href="../resources/css/index.css" />
 
 <header>
   <h1>Drifter</h1>

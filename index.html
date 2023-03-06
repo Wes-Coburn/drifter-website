@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:image" content="https://i.imgur.com/v7UQh3k.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Drifter</title>
 
-  <title>Home | Drifter</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
 
-  <link href="./resources/css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./resources/javascript/index.js" defer></script>
+    <script src="./components/header.js" defer></script>
+    <script src="./components/footer.js" defer></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="./resources/javascript/index.js" defer></script>
-  <script src="./components/header.js" defer></script>
-  <script src="./components/footer.js" defer></script>
-</head>
+  <body>
+    <!-- Custom header instead of <header-component> to correct relative filepaths -->
+    <header>
+      <h1>Drifter</h1>
+      <h2>Deckbuilding In Corporate Dystopia</h2>
+    </header>
 
-<body>
-  <!-- Custom header instead of <header-component> to correct relative filepaths -->
-  <header>
-    <h1>Drifter</h1>
-    <h2>Deckbuilding In Corporate Dystopia</h2>
-  </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./html/heroes.html">Heroes</a></li>
+        <li><a href="./html/about.html">About Us</a></li>
+        <li>
+          <a
+            href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F"
+            target="_blank"
+            >Play Now!</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <nav id="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="./html/heroes.html">Heroes</a></li>
-      <li><a href="./html/about.html">About Us</a></li>
-      <li>
-        <a href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F"
-          target="_blank">Play Now!</a>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://discord.gg/X49ju9VAEY" target="_blank">Discord</a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/drifterthegame/?r=nametag"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCb6l5aLCVajsJp8rTTyS_OA"
+            target="_blank"
+            >YouTube</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <nav>
-    <ul>
-      <li>
-        <a href="https://discord.gg/X49ju9VAEY" target="_blank">Discord</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/drifterthegame/?r=nametag" target="_blank">Instagram</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/channel/UCb6l5aLCVajsJp8rTTyS_OA" target="_blank">YouTube</a>
-      </li>
-    </ul>
-  </nav>
+    <main>
+      <div
+        class="first slider"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Welcome to the Drift<br />
+          <small>
+            <br />Drifter is a deckbuilding adventure game set in corporate
+            dystopia. <br />Choose your Drifter and make your stand against The
+            Corporations. <br /><br />Made with
+            <a href="https://www.unity.com" target="_blank">Unity</a>.
+          </small>
+        </p>
+      </div>
 
-  <main>
-    <div class="first slider">
-      <p>
-        Welcome to the Drift<br>
-        <small>
-          <br>Drifter is a deckbuilding adventure game set in corporate
-          dystopia. <br>Choose your Drifter and make your stand against The
-          Corporations. <br><br>Made with
-          <a href="https://www.unity.com" target="_blank">Unity</a>.
-        </small>
-      </p>
-    </div>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fP-61vrmw78" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fP-61vrmw78"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; 
       encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
-  </main>
+    </main>
 
-  <!-- Custom footer instead of <footer-component> to correct relative filepaths -->
-  <footer>
-    <address>
-      <br><br>Secret Passage Games<br>CA, USA<br>
-      <a href="mailto:secretpassagegames@outlook.com">Contact Us</a>
-    </address>
-    <br>
-  </footer>
+    <!-- Custom footer instead of <footer-component> to correct relative filepaths -->
+    <footer>
+      <address>
+        <br /><br />Secret Passage Games<br />CA, USA<br />
+        <a href="mailto:secretpassagegames@outlook.com">Contact Us</a>
+      </address>
+      <br />
+    </footer>
 
-  <script>
-    $(".slider").on("click", function () {
-      $(this).toggleClass("show-description");
-    });
-  </script>
-
-</body>
-
+    <script>
+      $(".slider").on("click", function () {
+        $(this).toggleClass("show-description");
+      });
+    </script>
+  </body>
 </html>

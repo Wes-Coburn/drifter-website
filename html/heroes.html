@@ -1,148 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Drifter</title>
 
-  <title>Home | Drifter</title>
+    <link rel="stylesheet" href="../resources/css/index.css" />
 
-  <link href="../resources/css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../resources/javascript/index.js" defer></script>
+    <script src="../components/header.js" defer></script>
+    <script src="../components/footer.js" defer></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="../resources/javascript/index.js" defer></script>
-  <script src="../components/header.js" defer></script>
-  <script src="../components/footer.js" defer></script>
-</head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#faydra">Faydra</a></li>
+          <li><a href="#genzer">Genzer</a></li>
+          <li><a href="#kili">Kili</a></li>
+          <li><a href="#madrik">Madrik</a></li>
+          <li><a href="#yergov">Yergov</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <header-component></header-component>
-  <main>
-    <nav>
-      <ul>
-        <li><a href="#faydra">Faydra</a></li>
-        <li><a href="#genzer">Genzer</a></li>
-        <li><a href="#kili">Kili</a></li>
-        <li><a href="#madrik">Madrik</a></li>
-        <li><a href="#yergov">Yergov</a></li>
-      </ul>
-    </nav>
+      <div
+        class="first slider"
+        id="faydra"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Faydra, Rogue Cyborg<br />
+          <br />
+          <small>
+            Faydra's parents were corporate elites, and she grew up in the
+            clutches of The Corporations. She was 12 when she disabled the
+            tracker embedded in her skull, and made her escape into the real
+            world. It's not a pretty sight, but at least it's real. Only problem
+            is, everyone wants the corporate hardware inside her head. Good
+            thing it makes her so damn hard to kill.
+          </small>
+        </p>
 
-    <div class="first slider" id="faydra">
-      <p>
-        Faydra, Rogue Cyborg<br>
-        <br>
-        <small>
-          Faydra's parents were corporate elites, and she grew up in the
-          clutches of The Corporations. She was 12 when she disabled the
-          tracker embedded in her skull, and made her escape into the real
-          world. It's not a pretty sight, but at least it's real. Only problem
-          is, everyone wants the corporate hardware inside her head. Good
-          thing it makes her so damn hard to kill.
-        </small>
-      </p>
-
-      <div class="audio-container">
-        <button onclick="playAudio('../resources/audio/Faydra.wav')">
-          LISTEN: Faydra
-        </button>
+        <div class="audio-container">
+          <button onclick="playAudio('../resources/audio/Faydra.wav')">
+            LISTEN: Faydra
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="second slider" id="genzer">
-      <p>
-        Genzer, Evolved Mutant<br>
-        <br>
-        <small>
-          Genzer grew up in a corporate slum, working for scraps. When he got
-          the chance to be in a clinical study and make some real money, he
-          took it. The participants were injected with experimental serums,
-          and most didn't survive. Genzer survived, horribly mutated, but with
-          strange new abilities that he would turn against The Corporations.
-        </small>
-      </p>
+      <div
+        class="second slider"
+        id="genzer"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Genzer, Evolved Mutant<br />
+          <br />
+          <small>
+            Genzer grew up in a corporate slum, working for scraps. When he got
+            the chance to be in a clinical study and make some real money, he
+            took it. The participants were injected with experimental serums,
+            and most didn't survive. Genzer survived, horribly mutated, but with
+            strange new abilities that he would turn against The Corporations.
+          </small>
+        </p>
 
-      <div class="audio-container">
-        <button onclick="playAudio('../resources/audio/Genzer.wav')">
-          LISTEN: Genzer
-        </button>
+        <div class="audio-container">
+          <button onclick="playAudio('../resources/audio/Genzer.wav')">
+            LISTEN: Genzer
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="third slider" id="kili">
-      <p>
-        Kili, Neon Rider<br>
-        <br>
-        <small>
-          Kili was an orphan, like so many others, put to work at a corporate
-          education facility. She escaped at the age of 9, but quickly found
-          herself in Neon Rider territory. They gave her a choice: ride, or
-          die. Now she rides as one of them, and gives The Corporations
-          something to fear.
-        </small>
-      </p>
+      <div
+        class="third slider"
+        id="kili"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Kili, Neon Rider<br />
+          <br />
+          <small>
+            Kili was an orphan, like so many others, put to work at a corporate
+            education facility. She escaped at the age of 9, but quickly found
+            herself in Neon Rider territory. They gave her a choice: ride, or
+            die. Now she rides as one of them, and gives The Corporations
+            something to fear.
+          </small>
+        </p>
 
-      <div class="audio-container">
-        <button onclick="playAudio('../resources/audio/Kili.wav')">
-          LISTEN: Kili
-        </button>
+        <div class="audio-container">
+          <button onclick="playAudio('../resources/audio/Kili.wav')">
+            LISTEN: Kili
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="fourth slider" id="madrik">
-      <p>
-        Madrik, Obsessed Mage<br>
-        <br>
-        <small>
-          Madrik was an aether engineer on a corporate colony, an indentured
-          servant to Vektor. Though his life was dismal, he managed to find
-          love, a wife. When she was caught stealing rations, she was executed
-          without a moment's hesitation. The pain was unbearable to Madrik,
-          and he vowed to bring her back, dedicating his life to the study of
-          aethercraft.
-        </small>
-      </p>
+      <div
+        class="fourth slider"
+        id="madrik"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Madrik, Obsessed Mage<br />
+          <br />
+          <small>
+            Madrik was an aether engineer on a corporate colony, an indentured
+            servant to Vektor. Though his life was dismal, he managed to find
+            love, a wife. When she was caught stealing rations, she was executed
+            without a moment's hesitation. The pain was unbearable to Madrik,
+            and he vowed to bring her back, dedicating his life to the study of
+            aethercraft.
+          </small>
+        </p>
 
-      <div class="audio-container">
-        <button onclick="playAudio('../resources/audio/Madrik.wav')">
-          LISTEN: Madrik
-        </button>
+        <div class="audio-container">
+          <button onclick="playAudio('../resources/audio/Madrik.wav')">
+            LISTEN: Madrik
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="fifth slider" id="yergov">
-      <p>
-        Yergov, Biochemist<br>
-        <br>
-        <small>
-          Yergov grew up in a region untouched by The Corporations, but
-          inevitably, they found him. His parents were slaughtered while he
-          watched from hiding. He alone survived, and fled his homeworld,
-          plotting his revenge. For years, he studied the hidden powers of
-          chemicals and elixirs, and has mastered many unnatural sciences.
-        </small>
-      </p>
+      <div
+        class="fifth slider"
+        id="yergov"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <p>
+          Yergov, Biochemist<br />
+          <br />
+          <small>
+            Yergov grew up in a region untouched by The Corporations, but
+            inevitably, they found him. His parents were slaughtered while he
+            watched from hiding. He alone survived, and fled his homeworld,
+            plotting his revenge. For years, he studied the hidden powers of
+            chemicals and elixirs, and has mastered many unnatural sciences.
+          </small>
+        </p>
 
-      <div class="audio-container">
-        <button onclick="playAudio('../resources/audio/Yergov.wav')">
-          LISTEN: Yergov
-        </button>
+        <div class="audio-container">
+          <button onclick="playAudio('../resources/audio/Yergov.wav')">
+            LISTEN: Yergov
+          </button>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer-component></footer-component>
+    </main>
+    <footer-component></footer-component>
 
-  <script>
-    $(".slider").on("click", function (event) {
-      if (event.target.nodeName === "BUTTON") {
-        event.stopPropagation();
-      } else {
-        $(this).toggleClass("show-description");
-      }
-    });
-  </script>
-
-</body>
-
+    <script>
+      $(".slider").on("click", function (event) {
+        if (event.target.nodeName === "BUTTON") {
+          event.stopPropagation();
+        } else {
+          $(this).toggleClass("show-description");
+        }
+      });
+    </script>
+  </body>
 </html>

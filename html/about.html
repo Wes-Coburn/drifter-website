@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Drifter</title>
 
-  <title>Home | Drifter</title>
+    <link rel="stylesheet" href="../resources/css/index.css" />
 
-  <link href="../resources/css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../resources/javascript/index.js" defer></script>
+    <script src="../components/header.js" defer></script>
+    <script src="../components/footer.js" defer></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="../resources/javascript/index.js" defer></script>
-  <script src="../components/header.js" defer></script>
-  <script src="../components/footer.js" defer></script>
-</head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <div
+        class="first slider"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <div class="gif-container">
+          <img
+            src="https://media.giphy.com/media/7J4P7cUur2DlErijp3/giphy.gif"
+            alt="Person using burning computer"
+            width="175"
+            height="175" />
+        </div>
 
-<body>
-  <header-component></header-component>
-  <main>
-    <div class="first slider">
-      <div class="gif-container">
-        <img src="https://media.giphy.com/media/7J4P7cUur2DlErijp3/giphy.gif" alt="Person using burning computer"
-          width="175" height="175">
+        <p>
+          Wesley Coburn<span class="role">Concept and Programming</span><br />
+          <small>
+            <br />Wesley is a chill-ass dude.
+            <br />
+            <br /><a
+              href="https://www.instagram.com/drifterthegame/"
+              target="_blank"
+              >Instagram</a
+            >
+            <br />
+          </small>
+        </p>
       </div>
+      <div
+        class="second slider"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <div class="gif-container">
+          <img
+            src="https://media.giphy.com/media/d31vTpVi1LAcDvdm/giphy.gif"
+            alt="Bob Ross painting"
+            width="175"
+            height="175" />
+        </div>
 
-      <p>
-        Wesley Coburn<span class="role">Concept and Programming</span><br>
-        <small>
-          <br>Wesley is a chill-ass dude.
-          <br>
-          <br><a href="https://www.instagram.com/drifterthegame/" target="_blank">Instagram</a>
-          <br>
-        </small>
-      </p>
-    </div>
-    <div class="second slider">
-      <div class="gif-container">
-        <img src="https://media.giphy.com/media/d31vTpVi1LAcDvdm/giphy.gif" alt="Bob Ross painting" width="175"
-          height="175">
+        <p>
+          Joe Rouverol<span class="role">Art and Design</span><br />
+          <small>
+            <br />Joe is a kick-ass dude.
+            <br />
+            <br /><a
+              href="https://www.instagram.com/dragonswordart/"
+              target="_blank"
+              >Instagram</a
+            >
+          </small>
+        </p>
       </div>
+      <div
+        class="third slider"
+        role="link"
+        tabindex="0"
+        style="cursor: pointer">
+        <div class="gif-container">
+          <img
+            src="https://media.giphy.com/media/l2JhGk8rR9WFLEDQY/giphy.gif"
+            alt="Violinist producing rainbows"
+            width="175"
+            height="175" />
+        </div>
 
-      <p>
-        Joe Rouverol<span class="role">Art and Design</span><br>
-        <small>
-          <br>Joe is a kick-ass dude.
-          <br>
-          <br><a href="https://www.instagram.com/dragonswordart/" target="_blank">Instagram</a>
-        </small>
-      </p>
-    </div>
-    <div class="third slider">
-      <div class="gif-container">
-        <img src="https://media.giphy.com/media/l2JhGk8rR9WFLEDQY/giphy.gif" alt="Violinist producing rainbows"
-          width="175" height="175">
+        <p>
+          Alden Muller<span class="role">Soundtrack</span><br />
+          <small>
+            <br />Alden is a bad-ass dude.
+            <br />
+            <br /><a href="https://soundcloud.com/little_fields" target="_blank"
+              >SoundCloud</a
+            >
+          </small>
+        </p>
       </div>
+    </main>
+    <footer-component></footer-component>
 
-      <p>
-        Alden Muller<span class="role">Soundtrack</span><br>
-        <small>
-          <br>Alden is a bad-ass dude.
-          <br>
-          <br><a href="https://soundcloud.com/little_fields" target="_blank">SoundCloud</a>
-        </small>
-      </p>
-    </div>
-  </main>
-  <footer-component></footer-component>
-
-  <script>
-    $(".slider").on("click", function () {
-      $(this).toggleClass("show-description");
-    });
-  </script>
-
-</body>
-
+    <script>
+      $(".slider").on("click", function () {
+        $(this).toggleClass("show-description");
+      });
+    </script>
+  </body>
 </html>
