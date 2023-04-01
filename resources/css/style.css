@@ -1,10 +1,11 @@
+/* Universal */
 html {
   font-family: "Rowdies", cursive;
 }
 
 /* Body */
 body {
-  background: url("https://i.imgur.com/v7UQh3k.jpg");
+  background: url("../../resources/images/Faydra_Large.png");
   background-color: white;
   background-attachment: fixed;
   background-position: center top;
@@ -15,7 +16,7 @@ body {
 /* Header */
 header {
   border-bottom: 0.3125rem solid black; /*5px solid black;*/
-  background: url("https://i.imgur.com/YwqUa7z.jpg");
+  background: url("../../resources/images/Madrik_Large.png");
   background-size: cover;
   background-position: 0% 20%;
   color: white;
@@ -106,6 +107,7 @@ nav li {
   background-size: cover;
   position: relative;
   left: 7.5%; /* Set equal to 1/2 WIDTH to center elements */
+  cursor: pointer;
 }
 .slider small {
   font-size: small;
@@ -142,7 +144,7 @@ nav li {
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
 }
-
+/* Slider Toggles */
 .slider.show-description p {
   height: 80%;
 }
@@ -200,7 +202,6 @@ input[type="button"] {
   padding: 0.625rem 0.9375rem; /*10px 15px;*/
   z-index: 0;
   border-radius: 0.75rem; /*12px;*/
-
   color: white;
   background-color: black;
 }
@@ -216,20 +217,20 @@ input[type="button"]:active {
 }
 
 /* Backgrounds */
-.first {
-  background-image: url("https://i.imgur.com/v7UQh3k.jpg");
+.bg-img--faydra {
+  background-image: url("../../resources/images/Faydra_Large.png");
 }
-.second {
-  background-image: url("https://i.imgur.com/7wDsw9V.png");
+.bg-img--genzer {
+  background-image: url("../../resources/images/Genzer_Large.png");
 }
-.third {
-  background-image: url("https://i.imgur.com/KBnHxI0.jpg");
+.bg-img--kili {
+  background-image: url("../../resources/images/Kili_Large.png");
 }
-.fourth {
-  background-image: url("https://i.imgur.com/YwqUa7z.jpg");
+.bg-img--madrik {
+  background-image: url("../../resources/images/Madrik_Large.png");
 }
-.fifth {
-  background-image: url("https://i.imgur.com/onqGLa4.jpg");
+.bg-img--yergov {
+  background-image: url("../../resources/images/Yergov_Large.png");
   background-position: left 10%;
 }
 
@@ -258,7 +259,12 @@ input[type="button"]:active {
 }
 
 /* Media Queries */
-@media (max-width: 500px) {
+/*
+@media only screen and (orientation: potrait) {
+}
+*/
+
+@media only screen and (max-width: 480px) {
   /* Content */
   .gif-container {
     display: flex;
