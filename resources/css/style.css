@@ -275,7 +275,7 @@ input[type="button"]:active {
   /* Text */
   h1 {
     font-size: 3.125rem; /*50px;*/
-    line-height: 2.5rem; /*40px;*/
+    /*line-height: 2.5rem;*/ /*40px;*/
   }
   h2 {
     font-size: 1.25rem; /*20px;*/
@@ -291,6 +291,11 @@ input[type="button"]:active {
   }
   a.small {
     font-size: small;
+  }
+
+  /* Modifiers */
+  .role {
+    font-size: smaller;
   }
 
   /* Media */
