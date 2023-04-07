@@ -41,9 +41,10 @@ footer {
 }
 footer > address {
   font-style: normal;
+  font-size: smaller;
 }
 footer a {
-  font-size: large;
+  font-size: larger;
 }
 
 /*
@@ -78,6 +79,10 @@ nav li {
   padding: 0;
   display: inline;
   line-height: 2.5rem; /*40px;*/ /* Set equal to <nav> HEIGHT to center elements */
+}
+nav li img {
+  position: relative;
+  top: 5px;
 }
 
 #main-nav {
@@ -182,20 +187,6 @@ iframe {
   z-index: 1;
 }
 
-/* ID's */
-/*
-#faydra {
-}  
-#genzer {
-}
-#kili {
-}
-#madrik {
-}  
-#yergov {
-}
-*/
-
 /* Buttons */
 button,
 input[type="button"] {
@@ -216,7 +207,33 @@ input[type="button"]:active {
   background-color: black;
 }
 
+/* Modifiers */
+.centered {
+  text-align: center;
+}
+.centered {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.clr--white * {
+  color: white;
+}
+
 /* Backgrounds */
+.bg--black {
+  background: black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4)
+  );
+  background: -moz-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.4)
+  );
+}
 .bg-img--faydra {
   background-image: url("../../resources/images/Faydra_Large.png");
 }

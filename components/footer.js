@@ -4,7 +4,7 @@ footerTemplate.innerHTML = `
 
 <footer>
   <address>
-    <br><br>Secret Passage Games<br>CA, USA<br>
+    <br><br>&copy; 2023 Secret Passage Games<br>CA, USA<br>
     <a href = "mailto:secretpassagegames@outlook.com">Contact Us</a>
   </address>
   <br>

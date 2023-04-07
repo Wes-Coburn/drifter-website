@@ -24,10 +24,12 @@
 
   <body>
     <!-- Custom header instead of <header-component> to correct relative filepaths -->
-    <header>
-      <h1>Drifter</h1>
-      <h2>Deckbuilding In Corporate Dystopia</h2>
-    </header>
+    <a href="index.html">
+      <header>
+        <h1>Drifter</h1>
+        <h2>Deckbuilding In Corporate Dystopia</h2>
+      </header>
+    </a>
 
     <nav id="main-nav">
       <ul>
@@ -38,8 +40,10 @@
           <a
             href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F"
             target="_blank"
-            >Play Now!</a
-          >
+            title="Download on itch.io"
+            >Play Now!
+            <img src="./resources/images/itch.io_Icon.png" alt="itch.io icon"
+          /></a>
         </li>
       </ul>
     </nav>
@@ -67,14 +71,18 @@
     </nav>
 
     <main>
-      <div class="slider bg-img--faydra" role="link" tabindex="0">
+      <div class="bg--black centered clr--white">
+        <h2>Welcome to the Drift</h2>
         <p>
-          Welcome to the Drift<br />
+          Drifter is a deckbuilding adventure game set in corporate dystopia.
+          <br />Choose your Drifter and make your stand against The
+          Corporations. <br /><br /><br />
           <small>
-            <br />Drifter is a deckbuilding adventure game set in corporate
-            dystopia. <br />Choose your Drifter and make your stand against The
-            Corporations. <br /><br />Made with
-            <a href="https://www.unity.com" target="_blank">Unity</a>.
+            <a href="https://www.unity.com" target="_blank">
+              <img src="./resources/images/Unity_Logo.png" alt="Unity Logo" />
+              <br />
+              Made with Unity
+            </a>
           </small>
         </p>
       </div>
@@ -91,7 +99,7 @@
     <!-- Custom footer instead of <footer-component> to correct relative filepaths -->
     <footer>
       <address>
-        <br /><br />Secret Passage Games<br />CA, USA<br />
+        <br /><br />&copy; 2023 Secret Passage Games<br />CA, USA<br />
         <a href="mailto:secretpassagegames@outlook.com">Contact Us</a>
       </address>
       <br />
