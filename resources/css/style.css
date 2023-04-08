@@ -13,9 +13,17 @@ body {
   background-size: cover;
 }
 
+/* Text */
+small {
+  font-size: small;
+}
+.clr--white * {
+  color: white;
+}
+
 /* Header */
 header {
-  border-bottom: 0.3125rem solid black; /*5px solid black;*/
+  border-bottom: 0.3125rem solid black;
   background: url("../../resources/images/Madrik_Large.png");
   background-size: cover;
   background-position: 0% 20%;
@@ -23,13 +31,12 @@ header {
 }
 header > h1 {
   margin: 0;
-  padding-top: 0.3125rem; /*5px;*/
   text-align: center;
-  font-size: 4.6875rem; /*75px;*/
+  font-size: 4.6875rem;
   color: #aaaaaa;
 }
 header > h2 {
-  margin-bottom: 1.25rem; /*20px;*/
+  margin: 0 0 0.5rem;
   text-align: center;
   color: #bbbbbb;
 }
@@ -47,15 +54,10 @@ footer a {
   font-size: larger;
 }
 
-/*
-* Navigation
-* > Nav
-* > #main-nav
-*/
+/* Nav */
 nav {
-  height: 2.5rem; /*40px;*/
+  height: 2.25rem;
   position: sticky;
-  top: 3.125rem;
   z-index: 9;
   text-align: center;
 }
@@ -78,15 +80,15 @@ nav ul {
 nav li {
   padding: 0;
   display: inline;
-  line-height: 2.5rem; /*40px;*/ /* Set equal to <nav> HEIGHT to center elements */
+  line-height: 2.25rem; /* Set equal to <nav> HEIGHT to center elements */
 }
 nav li img {
   position: relative;
   top: 5px;
 }
-
+/* Main-Nav */
 #main-nav {
-  height: 3.125rem; /*50px;*/
+  height: 2.25rem;
   top: 0;
   /*transition: opacity .3s ease-in-out;*/
 }
@@ -95,13 +97,18 @@ nav li img {
   color: white;
 }
 #main-nav li {
-  line-height: 3.125rem; /*50px;*/ /* Set equal to <nav id="main-nav"> HEIGHT to center elements */
+  line-height: 2.25rem; /* Set equal to <nav id="main-nav"> HEIGHT to center elements */
 }
-/*
-#main-nav.sticky {
-  opacity: .5;
+
+/* Centered */
+.centered {
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
 }
-*/
+.centered * {
+  margin: 0;
+}
 
 /* Slider */
 .slider {
@@ -115,7 +122,6 @@ nav li img {
   cursor: pointer;
 }
 .slider small {
-  font-size: small;
   opacity: 0;
 }
 .slider p {
@@ -174,7 +180,7 @@ a:hover {
 
 /* Media */
 iframe {
-  margin: 1.25rem auto; /*20px auto;*/
+  margin: 0 auto;
   display: block;
   border: 0;
 }
@@ -205,18 +211,6 @@ button:active,
 input[type="button"]:active {
   color: white;
   background-color: black;
-}
-
-/* Modifiers */
-.centered {
-  text-align: center;
-}
-.centered {
-  margin: 10px 0;
-  padding: 10px 0;
-}
-.clr--white * {
-  color: white;
 }
 
 /* Backgrounds */
@@ -276,11 +270,6 @@ input[type="button"]:active {
 }
 
 /* Media Queries */
-/*
-@media only screen and (orientation: potrait) {
-}
-*/
-
 @media only screen and (max-width: 480px) {
   /* Content */
   .gif-container {
@@ -291,23 +280,18 @@ input[type="button"]:active {
 
   /* Text */
   h1 {
-    font-size: 3.125rem; /*50px;*/
-    /*line-height: 2.5rem;*/ /*40px;*/
+    font-size: 3.125rem;
   }
   h2 {
-    font-size: 1.25rem; /*20px;*/
-    /*margin: 20px 0 30px;*/
+    font-size: 1.25rem;
   }
   small {
-    font-size: smaller;
+    font-size: x-small;
   }
 
   /* Links */
   a {
     font-size: medium;
-  }
-  a.small {
-    font-size: small;
   }
 
   /* Modifiers */
@@ -317,12 +301,12 @@ input[type="button"]:active {
 
   /* Media */
   iframe {
-    max-width: 21.875rem; /*350px;*/
+    max-width: 21.875rem;
   }
   .gif-container img {
-    width: 4.6875rem; /*75px;*/
-    height: 4.6875rem; /*75px;*/
-    margin-top: 1.25rem; /*20px;*/
-    border-width: 0.0625rem; /*1px;*/
+    width: 4.6875rem;
+    height: 4.6875rem;
+    margin-top: 1.25rem;
+    border-width: 0.0625rem;
   }
 }

@@ -21,7 +21,7 @@ headerTemplate.innerHTML = `
         title="Download on itch.io"
         >Play Now!
         <img
-          src="../resources/images/itch.io_Icon.png"
+          src="../resources/images/itch.io_Icon_White.png"
           alt="itch.io icon"
         /></a>
       </li>
