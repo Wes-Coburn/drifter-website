@@ -3,8 +3,10 @@ footerTemplate.innerHTML = `
 <link rel="stylesheet" href="../resources/css/index.css" />
 
 <footer>
+  <br><br>
+  <img src="../resources/images/SPG_Logo.png" alt="Secret Passage Games" />
   <address>
-    <br><br>&copy; 2023 Secret Passage Games<br>CA, USA<br>
+    &copy; 2023 Secret Passage Games<br>CA, USA<br>
     <a href = "mailto:secretpassagegames@outlook.com">Contact Us</a>
   </address>
   <br>

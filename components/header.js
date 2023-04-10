@@ -9,7 +9,7 @@ headerTemplate.innerHTML = `
   </header>
 </a>
 
-<nav id="main-nav">
+<nav id="nav-main">
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../html/heroes.html">Heroes</a></li>

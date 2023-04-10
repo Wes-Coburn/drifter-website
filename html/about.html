@@ -15,9 +15,30 @@
     <script src="../components/footer.js" defer></script>
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-4L98TDCFZP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-4L98TDCFZP");
+  </script>
+
   <body>
     <header-component></header-component>
     <main>
+      <br />
+      <div style="text-align: center">
+        <img
+          src="../resources/images/SPG_Logo_Large.png"
+          alt="Secret Passage Games" />
+      </div>
+
       <div class="slider bg-img--faydra" role="link" tabindex="0">
         <div class="gif-container">
           <img
@@ -28,7 +49,7 @@
         </div>
 
         <p>
-          Wesley Coburn<span class="role">Concept and Programming</span><br />
+          Wesley Coburn<span class="right">Concept and Programming</span><br />
           <small>
             <br />Wesley is a chill-ass dude.
             <br />
@@ -51,7 +72,7 @@
         </div>
 
         <p>
-          Joe Rouverol<span class="role">Art and Design</span><br />
+          Joe Rouverol<span class="right">Art and Design</span><br />
           <small>
             <br />Joe is a kick-ass dude.
             <br />
@@ -73,7 +94,7 @@
         </div>
 
         <p>
-          Alden Muller<span class="role">Soundtrack</span><br />
+          Alden Muller<span class="right">Soundtrack</span><br />
           <small>
             <br />Alden is a bad-ass dude.
             <br />
