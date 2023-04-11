@@ -59,7 +59,8 @@ nav a {
   border-radius: 0.75rem;
   margin: 0 5px;
 }
-nav a:hover, #nav-social a:hover {
+nav a:hover,
+#nav-social a:hover {
   background-color: black;
 }
 nav ul {
@@ -71,7 +72,7 @@ nav ul {
 nav li {
   padding: 0;
   display: inline;
-  line-height: 2.25rem; /* Set equal to HEIGHT of <nav> to center elements */
+  line-height: 2.25rem; /** Set equal to HEIGHT of <nav> to center elements **/
 }
 nav li img {
   position: relative;
@@ -91,7 +92,7 @@ nav li img {
   color: white;
 }
 #nav-main li {
-  line-height: 3rem; /* Set equal to HEIGHT of #main-nav to center elements */
+  line-height: 3rem; /** Set equal to HEIGHT of #main-nav to center elements **/
 }
 
 /* Social Nav */
@@ -114,26 +115,28 @@ small {
   padding: 10px 0;
 }
 .centered * {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 80%;
 }
 .right {
   float: right;
 }
-/*
-.thin {
-  padding: 0.375rem;
+.img-centered {
+  text-align: center;
 }
-*/
+.img-centered * {
+  max-width: 80%;
+}
 
 /* Slider */
 .slider {
   width: 85%;
-  height: 12.5rem; /*200px;*/
-  margin: 2.5rem 0; /*40px 0;*/
-  border-radius: 0.75rem; /*12px;*/
+  height: 12.5rem;
+  margin: 2.5rem 0;
+  border-radius: 0.75rem;
   background-size: cover;
   position: relative;
-  left: 7.5%; /* Set equal to 1/2 WIDTH to center elements */
+  left: 7.5%; /** Set equal to 1/2 WIDTH to center elements **/
   cursor: pointer;
 }
 .slider small {
@@ -144,7 +147,7 @@ small {
   width: 100%;
   height: 20%;
 
-  padding: 0.625rem; /*10px;*/
+  padding: 0.625rem;
   bottom: 0;
   margin: 0;
 
@@ -161,7 +164,7 @@ small {
     rgba(0, 0, 0, 0.4)
   );
 
-  line-height: 0.9375rem; /*15px;*/
+  line-height: 0.9375rem;
   text-align: left;
   position: absolute;
   color: rgba(255, 255, 255, 1);
@@ -170,6 +173,7 @@ small {
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
 }
+
 /* Slider Toggles */
 .slider.show-description p {
   height: 80%;
@@ -200,19 +204,19 @@ iframe {
   border: 0;
 }
 .gif-container img {
-  width: 9.375rem; /*150px;*/
-  height: 9.375rem; /*150px;*/
-  margin-top: 1.25rem; /*20px;*/
-  border: 0.3125rem solid black; /*5px solid black;*/
-  border-radius: 1.25rem; /*20px;*/
+  width: 9.375rem;
+  height: 9.375rem;
+  margin-top: 1.25rem;
+  border: 0.3125rem solid black;
+  border-radius: 1.25rem;
   z-index: 1;
 }
 
 /* Buttons */
 button {
-  padding: 0.625rem 0.9375rem; /*10px 15px;*/
+  padding: 0.625rem 0.9375rem;
   z-index: 0;
-  border-radius: 0.75rem; /*12px;*/
+  border-radius: 0.75rem;
   color: white;
   background-color: black;
 }
@@ -262,7 +266,6 @@ button:active {
 .audio-container {
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
   opacity: 0;
   transition: opacity 0.5s;
   pointer-events: none;
@@ -280,7 +283,7 @@ button:active {
   .gif-container {
     display: flex;
     justify-content: right;
-    padding-top: 4.6875rem; /*75px;*/
+    padding-top: 4.6875rem;
   }
 
   /* Text */
