@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Home | Drifter</title>
+    <title>About | Drifter</title>
 
     <link rel="stylesheet" href="../resources/css/index.css" />
 
@@ -13,6 +13,9 @@
     <script src="../resources/javascript/index.js" defer></script>
     <script src="../components/header.js" defer></script>
     <script src="../components/footer.js" defer></script>
+
+    <!-- itch.io -->
+    <script type="text/javascript" src="https://static.itch.io/api.js"></script>
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -29,14 +32,22 @@
     gtag("config", "G-4L98TDCFZP");
   </script>
 
-  <body>
+  <body onload="onPageLoad()">
     <header-component></header-component>
     <main>
-      <br />
+      <div class="bg-grad--black clr--white centered">
+        <h2 class="slide-from-left">Secret Passage Games</h2>
+        <br />
+        <p class="slide-from-right">We are a small indie game developer. We make games.</p>
+      </div>
+
       <div class="img-centered">
-        <img
-          src="../resources/images/SPG_Logo_Large.png"
-          alt="Secret Passage Games" />
+        <a href="#"
+          ><img
+            src="../resources/images/SPG_Logo_Large.png"
+            alt="Secret Passage Games"
+            class="fade-in"
+        /></a>
       </div>
 
       <div class="slider bg-img--faydra" role="link" tabindex="0">
@@ -49,7 +60,7 @@
         </div>
 
         <p>
-          Wesley Coburn<span class="right">Concept and Programming</span><br />
+          Wesley Coburn<span class="role">Concept and Programming</span><br />
           <small>
             <br />Wesley is a chill-ass dude.
             <br />
@@ -72,7 +83,7 @@
         </div>
 
         <p>
-          Joe Rouverol<span class="right">Art and Design</span><br />
+          Joe Rouverol<span class="role">Art and Design</span><br />
           <small>
             <br />Joe is a kick-ass dude.
             <br />
@@ -94,7 +105,7 @@
         </div>
 
         <p>
-          Alden Muller<span class="right">Soundtrack</span><br />
+          Alden Muller<span class="role">Soundtrack</span><br />
           <small>
             <br />Alden is a bad-ass dude.
             <br />
@@ -111,6 +122,10 @@
       $(".slider").on("click", function () {
         $(this).toggleClass("show-description");
       });
+
+      function onPageLoad() {
+        $("body").toggleClass("page-loaded");
+      }
     </script>
   </body>
 </html>

@@ -15,7 +15,10 @@
     <script src="./components/header.js" defer></script>
     <script src="./components/footer.js" defer></script>
 
-    <!-- Open Graph / Facebook -->
+    <!-- itch.io -->
+    <script type="text/javascript" src="https://static.itch.io/api.js"></script>
+
+    <!-- Open Graph / Facebook / Instagram -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Drifter Deckbuilding Game" />
     <meta
@@ -55,34 +58,8 @@
     gtag("config", "G-4L98TDCFZP");
   </script>
 
-  <body>
-    <!-- Custom header instead of <header-component> to correct relative filepaths -->
-    <a href="index.html">
-      <header>
-        <h1>Drifter</h1>
-        <h2>Deckbuilding In Corporate Dystopia</h2>
-      </header>
-    </a>
-
-    <nav id="nav-main">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./html/heroes.html">Heroes</a></li>
-        <li><a href="./html/about.html">About Us</a></li>
-        <li>
-          <a
-            href="https://weslex555.itch.io/drifter-deckbuilding-game/download/ieuEK3_ASTYEBXAEJ7w7_HcubBCo2jCDl6Et2K_F"
-            target="_blank"
-            title="Download on itch.io"
-            >Play Now!
-            <img
-              src="./resources/images/itch.io_Icon_White.png"
-              alt="itch.io icon"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-
+  <body onload = "onPageLoad()">
+    <header-component></header-component>
     <nav id="nav-social">
       <ul>
         <li>
@@ -120,10 +97,11 @@
 
     <main>
       <div class="bg-grad--black clr--white centered">
-        <h2>Welcome to the Drift</h2>
+        <h2 class="slide-from-left">Welcome to the Drift</h2>
         <br />
-        <p>
-          Drifter is a deckbuilding adventure game set in corporate dystopia.
+        <p class="slide-from-right">
+          Drifter is a deckbuilding adventure game set in a futuristic corporate
+          dystopia.
           <br />Choose your Drifter and make your stand against The
           Corporations. <br /><br />
           <small>
@@ -144,22 +122,17 @@
         allow="accelerometer; autoplay; clipboard-write; 
       encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
     </main>
-
-    <!-- Custom footer instead of <footer-component> to correct relative filepaths -->
-    <footer>
-      <br /><br />
-      <img src="./resources/images/SPG_Logo.png" alt="Secret Passage Games" />
-      <address>
-        &copy; 2023 Secret Passage Games<br />CA, USA<br />
-        <a href="mailto:secretpassagegames@outlook.com">Contact Us</a>
-      </address>
-      <br />
-    </footer>
+    
+    <footer-component></footer-component>
 
     <script>
       $(".slider").on("click", function () {
         $(this).toggleClass("show-description");
       });
+
+      function onPageLoad() {
+        $("body").toggleClass("page-loaded");
+      }
     </script>
   </body>
 </html>

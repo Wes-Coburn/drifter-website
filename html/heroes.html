@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Home | Drifter</title>
+    <title>Drifters | Drifter</title>
 
     <link rel="stylesheet" href="../resources/css/index.css" />
 
@@ -13,6 +13,9 @@
     <script src="../resources/javascript/index.js" defer></script>
     <script src="../components/header.js" defer></script>
     <script src="../components/footer.js" defer></script>
+
+    <!-- itch.io -->
+    <script type="text/javascript" src="https://static.itch.io/api.js"></script>
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -29,7 +32,7 @@
     gtag("config", "G-4L98TDCFZP");
   </script>
 
-  <body>
+  <body onload="onPageLoad()">
     <header-component></header-component>
     <main>
       <nav>
@@ -42,9 +45,20 @@
         </ul>
       </nav>
 
+      <div class="bg-grad--black clr--white centered">
+        <h2 class="slide-from-left">The Drifters</h2>
+        <br />
+        <p class="slide-from-right">
+          Each Drifter has a unique style, and their own grudge against The
+          Corporations.
+        </p>
+      </div>
+
       <div class="slider bg-img--faydra" id="faydra" role="link" tabindex="0">
         <p>
-          Faydra, Rogue Cyborg<br />
+          Faydra, Rogue Cyborg<span class="role"
+            ><i>"Hunt from the Shadows"</i></span
+          ><br />
           <br />
           <small>
             Faydra's parents were corporate elites, and she grew up in the
@@ -65,7 +79,8 @@
 
       <div class="slider bg-img--genzer" id="genzer" role="link" tabindex="0">
         <p>
-          Genzer, Evolved Mutant<br />
+          Genzer, Evolved Mutant<span class="role"><i>"Life is Change"</i></span
+          ><br />
           <br />
           <small>
             Genzer grew up in a corporate slum, working for scraps. When he got
@@ -85,7 +100,9 @@
 
       <div class="slider bg-img--kili" id="kili" role="link" tabindex="0">
         <p>
-          Kili, Neon Rider<br />
+          Kili, Neon Rider<span class="role"
+            ><i>"Strike First and Never Surrender"</i></span
+          ><br />
           <br />
           <small>
             Kili was an orphan, like so many others, put to work at a corporate
@@ -105,7 +122,9 @@
 
       <div class="slider bg-img--madrik" id="madrik" role="link" tabindex="0">
         <p>
-          Madrik, Obsessed Mage<br />
+          Madrik, Obsessed Mage<span class="role"
+            ><i>"No Such Thing as Too Much Power"</i></span
+          ><br />
           <br />
           <small>
             Madrik was an aether engineer on a corporate colony, an indentured
@@ -126,7 +145,9 @@
 
       <div class="slider bg-img--yergov" id="yergov" role="link" tabindex="0">
         <p>
-          Yergov, Biochemist<br />
+          Yergov, Biochemist<span class="role"
+            ><i>"Innovation at Any Cost"</i></span
+          ><br />
           <br />
           <small>
             Yergov grew up in a region untouched by The Corporations, but
@@ -154,6 +175,10 @@
           $(this).toggleClass("show-description");
         }
       });
+
+      function onPageLoad() {
+        $("body").toggleClass("page-loaded");
+      }
     </script>
   </body>
 </html>
