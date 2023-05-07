@@ -2,8 +2,14 @@
 $font-stack: "Rowdies", cursive;
 
 // Colors
-$half-black: rgba($color: black, $alpha: 0.5);
-$most-black: rgba($color: black, $alpha: 0.7);
+$half-black: rgba(
+  $color: black,
+  $alpha: 0.5,
+);
+$most-black: rgba(
+  $color: black,
+  $alpha: 0.7,
+);
 
 // Gradients
 $bg-black-1: black;
@@ -96,16 +102,18 @@ nav {
   z-index: 9;
   text-align: center;
 }
-nav a,
+nav a:not(.buy_button),
 nav button {
   padding: 0.3125rem;
   background-color: $half-black;
   border-radius: 0.75rem;
   margin: 0 5px;
 }
-nav a:hover,
-#nav-social a:hover,
-nav button:hover {
+nav a,
+nav button {
+  transition: $trans-half;
+}
+nav a:not(.buy_button):hover {
   background-color: black;
 }
 nav ul {
@@ -229,6 +237,8 @@ a:hover {
 
 /* Media */
 iframe {
+  width: 560px;
+  height: 315px;
   max-width: 80%;
   margin: 0 auto;
   display: block;
@@ -254,17 +264,17 @@ button {
   cursor: pointer;
 }
 button:hover {
-  color: black;
-  background-color: white;
-}
-button:active {
-  color: white;
   background-color: black;
 }
-#buy_button {
+/*
+button:active {
+  background-color: black;
+}
+*/
+button.buy_button {
   background-color: rgba(255, 0, 0, 0.6);
 }
-#buy_button:hover {
+button.buy_button:hover {
   background-color: red;
 }
 
@@ -389,13 +399,7 @@ nav ul {
     white-space: pre;
   }
 
-  /* Nav */
-  nav ul:hover {
-    background-color: $most-black;
-  }
-
   /* Backgrounds */
-  .bg-grad--black:hover,
   .slider:hover p {
     background: $most-black;
   }
@@ -420,8 +424,16 @@ nav ul {
     margin: 0;
   }
 
+  #nav-main li img {
+    height: 15px;
+  }
+
+  #nav-main button {
+    line-height: 1;
+  }
+
   /* Links */
-  a {
+  #nav-main a, #nav-main button {
     font-size: medium;
   }
 

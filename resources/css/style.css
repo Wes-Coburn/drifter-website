@@ -80,7 +80,7 @@ nav {
   text-align: center;
 }
 
-nav a,
+nav a:not(.buy_button),
 nav button {
   padding: 0.3125rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -88,9 +88,12 @@ nav button {
   margin: 0 5px;
 }
 
-nav a:hover,
-#nav-social a:hover,
-nav button:hover {
+nav a,
+nav button {
+  transition: all 0.5s;
+}
+
+nav a:not(.buy_button):hover {
   background-color: black;
 }
 
@@ -229,7 +232,7 @@ a:hover {
 iframe {
   width: 560px;
   height: 315px;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   display: block;
   border: 5px dashed rgba(255, 0, 0, 0.5);
@@ -256,20 +259,19 @@ button {
 }
 
 button:hover {
-  color: black;
-  background-color: white;
-}
-
-button:active {
-  color: white;
   background-color: black;
 }
 
-#buy_button {
+/*
+button:active {
+  background-color: black;
+}
+*/
+button.buy_button {
   background-color: rgba(255, 0, 0, 0.6);
 }
 
-#buy_button:hover {
+button.buy_button:hover {
   background-color: red;
 }
 
@@ -407,6 +409,10 @@ nav ul {
     content: "\a";
     white-space: pre;
   }
+  /* Backgrounds */
+  .slider:hover p {
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 /** Mobile **/
 @media only screen and (max-width: 700px) {
@@ -425,8 +431,14 @@ nav ul {
   #nav-main a {
     margin: 0;
   }
+  #nav-main li img {
+    height: 15px;
+  }
+  #nav-main button {
+    line-height: 1;
+  }
   /* Links */
-  a {
+  #nav-main a, #nav-main button {
     font-size: medium;
   }
   .gif-container {
