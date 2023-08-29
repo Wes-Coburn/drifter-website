@@ -1,4 +1,4 @@
-# Drifter-Website
+# DrifterTheGame.Com
 
 Website for the [Drifter Deckbuilding Game](https://github.com/Wes-Coburn/Drifter-Deckbuilding-Game).
 
