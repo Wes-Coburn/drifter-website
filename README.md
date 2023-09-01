@@ -4,7 +4,7 @@ Website for the [Drifter Deckbuilding Game](https://github.com/Wes-Coburn/Drifte
 
 ## Deployment
 
-Hosted by [WhoIs](https://www.whois.com/).
+Hosted by [WhoIs](https://www.whois.com/) at [DrifterTheGame.Com](https://www.DrifterTheGame.com/).
 
 ## Technologies
 
