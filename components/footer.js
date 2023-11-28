@@ -5,10 +5,17 @@ footerTemplate.innerHTML = `
 <footer>
   <br><br>
   <img src="/resources/images/SPG_Logo.png" alt="Secret Passage Games" />
-  <address>
-    &copy; 2023 Secret Passage Games<br>CA, USA<br>
-    <a href = "mailto:secretpassagegames@outlook.com">Contact Us</a>
-  </address>
+  <p>
+  &copy; 2023 Wesley H.G. Coburn
+  <br />
+  <a
+  href="https://github.com/Wes-Coburn"
+  target="_blank"
+  rel="noreferrer"
+  >
+  github.com/Wes-Coburn
+  </a>
+  </p>
   <br>
 </footer>
 `;
